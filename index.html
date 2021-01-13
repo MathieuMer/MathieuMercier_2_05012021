@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Reservia</title>
     <!-- On peut avoir d'autres méta-données ici -->
   </head>
@@ -17,15 +18,11 @@
 
              <div id="header_top">
 
-                <div id=conteneur_logo>
-                    <img src="images/logo/Reservia.svg" alt="logo"/>
-                </div>
-
                 <nav>
                     <ul>
                         <li class="survol"><a href="#hebergements"><p>Hébergements</p></a></li>
-                        <li class="survol"><a href="#activite"><p>Activités</p></a></li>
-                        <li id="inscription"><a href="#"><p>S'inscrire</p></a></li>
+                        <li class="survol2"><a href="#activite"><p>Activités</p></a></li>
+                        <li id="inscription"><a id="lien_inscription" href="#"><p>S'inscrire</p></a></li>
                     </ul>
                 </nav>
 
@@ -43,13 +40,13 @@
                         <img class="icon_gps" src="images/icons/gps.svg" alt="gps" />
                     </div>
                     <input id="recherche" type="search" />
-                    <a href="#"><p>Rechercher</p></a>
+                    <a href="#"><p>Rechercher</p><span class="loupe"><i class="fas fa-search"></i></span></a>
                 </div>              
             </div>
 
             <div id="bloc_filtres">
                 <div id="conteneur_filtres">
-                    <div><p>Filtres</p></div>
+                    <div id="filtre100"><p>Filtres</p></div>
 
                     <div class="conteneur_icons_filtres">
                         <div class="conteneur_icon">
