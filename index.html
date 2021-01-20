@@ -16,13 +16,13 @@
 
         <header>
 
-             <div id="header_top">
+             <div class="header_top">
 
                 <nav>
                     <ul>
                         <li class="survol"><a href="#hebergements"><p>Hébergements</p></a></li>
                         <li class="survol2"><a href="#activite"><p>Activités</p></a></li>
-                        <li id="inscription"><a id="lien_inscription" href="#"><p>S'inscrire</p></a></li>
+                        <li class="inscription"><a class="lien_inscription" href="#"><p>S'inscrire</p></a></li>
                     </ul>
                 </nav>
 
@@ -33,20 +33,17 @@
 
         </header>
 
-        <div id="bloc_filtres_global">
-            <div id="bloc_recherche">
-                <div id="conteneur_recherche"><!--conteneur des 3 parties de la barre recherche-->
-                    <div id="conteneur_icon_gps">
-                        <img class="icon_gps" src="images/icons/gps.svg" alt="gps" />
-                    </div>
-                    <input id="recherche" type="search" />
-                    <a href="#"><p id="reglage_bouton_recherche_4k">Rechercher</p><span class="loupe"><i class="fas fa-search"></i></span></a>
-                </div>              
-            </div>
+        <div class="bloc_filtres_global">
+            
+            <form class="conteneur_recherche"><!--conteneur des 3 parties de la barre recherche-->
+                <label for="gps" class="conteneur_icon_gps"><i class="fas fa-map-marker-alt"></i></label>
+                <input type="text" id="recherche" name="name" placeholder="Marseille, France" maxlength="30" size="30">
+                <button class="bouton_recherche" type="submit"><i class="fas fa-search" id="cache"></i><p>Rechercher</p></button>
+            </form>
 
-            <div id="bloc_filtres">
-                <div id="conteneur_filtres">
-                    <div id="filtre100"><p>Filtres</p></div>
+            <div class="bloc_filtres">
+                <div class="conteneur_filtres">
+                    <div class="filtre100"><p>Filtres</p></div>
 
                     <div class="conteneur_icons_filtres">
                         <div class="conteneur_icon">
@@ -78,22 +75,22 @@
                 </div>
             </div>
 
-            <div id="filtre_3">
-                <div id="conteneur_info">
-                <span id="icon_info"><i class="fas fa-info"></i></span>
+            <div class="filtre_3">
+                <div class="conteneur_info">
+                <span class="icon_info"><i class="fas fa-info"></i></span>
                 </div>
                 <p>Plus de 500 logements sont disponibles dans votre ville</p>
             </div>
 
         </div>
 
-        <section id="contenu"> <!--Mettre en flex wrap et jouer sur les flex grow des sections pour que la section 3 aillent à la ligne-->
+        <section class="contenu"> <!--Mettre en flex wrap et jouer sur les flex grow des sections pour que la section 3 aillent à la ligne-->
 
             <div id="hebergements">
 
                 <h2 class="titres_sections">Hébergements à Marseille</h2>
 
-                <div id=conteneur_herbergements> <!--Hebergement Conteneur Flex-->
+                <div class="conteneur_herbergements"> <!--Hebergement Conteneur Flex-->
 
                     <a href="#" class=lien>
                         <div class="carte_etablissement E1"> <!--Hebergement Flex item1-->
@@ -194,9 +191,9 @@
 
             <div id="populaires">
 
-                <h2 class="titres_sections">Les plus populaires <img id="increase" src="images/icons/increase.svg" alt="" /></h2>
+                <h2 class="titres_sections">Les plus populaires <img class="increase" src="images/icons/increase.svg" alt="" /></h2>
 
-                <div id="conteneur_populaires"> <!--Conteneur Flex populaire-->
+                <div class="conteneur_populaires"> <!--Conteneur Flex populaire-->
 
                     <a href="#" class="lien2"> <!--Flex item 1-->
                         
@@ -251,7 +248,7 @@
             <div id="activite">
                 <h2 class="titres_sections">Activités à Marseille</h2>
 
-                <div id=conteneur_activites>
+                <div class=conteneur_activites>
 
                     <a href="#" class="lien3_grand"> <!--Flex item 1-->
                         <div class="carte_activité_grand A1">
@@ -292,37 +289,24 @@
                 </div>     
             </div>
         </section>
-
     </div>
 
     <footer>
-            
-        <div id="a_propos">
-            <ul>
-                <li class="titre_footer">A propos</li>
-                <li><a href="#">Fonctionnement du site</a></li>
-                <li><a href="#">Conditions générales de vente</a></li>
-                <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-        </div>
-
-        <div id="nos_hebergements">
-            <ul>
-                <li class="titre_footer">Nos hébergements</li>
-                <li><a href="#">Charte qualité</a></li>
-                <li><a href="#">Soumettre votre hôtel</a></li>
-            </ul>
-        </div>
-
-        <div id="assistance">
-            <ul>
-                <li class="titre_footer">Assistance</li>
-                <li><a href="#">Centre d'aide</a></li>
-                <li><a href="#">Nous contacter</a></li>
-            </ul>
-        </div>
-            
+        <ul>
+            <li class="titre_footer">A propos</li>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+        </ul>
+        <ul>
+            <li class="titre_footer">Nos hébergements</li>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+        </ul>
+        <ul>
+            <li class="titre_footer">Assistance</li>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+        </ul>     
     </footer>
-  
-    
 </body>
